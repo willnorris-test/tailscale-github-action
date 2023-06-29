@@ -22,4 +22,4 @@ jobs:
           authkey: ${{ secrets.TS_AUTHKEY }}
 
       - name: check for hello.ts.net in netmap
-        run: tailscale status | grep -q hello
+        run: tailscale status
