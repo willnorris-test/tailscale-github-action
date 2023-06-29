@@ -19,8 +19,7 @@ jobs:
       - name: Tailscale Action
         uses: ./
         with:
-          oauth-secret: "foo"
-          tags: tag:ci
+          authkey: "foo"
 
       - name: check for hello.ts.net in netmap
         run: tailscale status | grep -q hello
