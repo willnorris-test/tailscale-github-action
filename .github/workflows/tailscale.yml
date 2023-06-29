@@ -18,8 +18,7 @@ jobs:
       - name: Tailscale Action
         uses: ./
         with:
-          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
-          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          oauth-secret: "foo"
           tags: tag:ci
 
       - name: check for hello.ts.net in netmap
